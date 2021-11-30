@@ -4,6 +4,7 @@ const config = require('../config/config');
 const { tokenTypes } = require('../config/tokens');
 const ApiError = require('../utils/ApiError');
 const { Token } = require('../models');
+const userService = require('./user.service');
 
 const generateToken = (userId, expires, type, secret = config.jwt.secret) => {
     const payload = {

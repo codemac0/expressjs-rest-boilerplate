@@ -24,7 +24,7 @@ exports.signup = catchAsync(async (req, res) => {
 exports.signin = catchAsync(async (req, res) => {
     req.body = sanitize(req.body);
     const { email, password } = req.body;
-    const user = await authService.loginUserWithEmailAndPassword(email, password);
+    const user = await authService.loginUser(email, password);
     const token = await tokenService.generateAuthTokens(user);
 
     return res.send({

@@ -5,7 +5,7 @@ const { tokenTypes } = require('../config/tokens');
 const Token = require('../models/token.model');
 const tokenService = require('./token.service');
 
-const loginUserWithEmailAndPassword = async (email, password) => {
+const loginUser = async (email, password) => {
     const user = await userService.getUserByEmail(email);
     if (!user || !(await user.isPasswordMatch(password))) {
       throw new ApiError(httpStatus.UNAUTHORIZED, 'Incorrect email or password');
@@ -26,6 +26,6 @@ const logout = async (accessToken) => {
 };
 
 module.exports = {
-    loginUserWithEmailAndPassword,
+  loginUser,
     logout
 };
