@@ -23,7 +23,7 @@ cp .env.example .env
 ```
 ## Features
 - **[MongoDB](https://www.mongodb.com) - [Mongoose](https://mongoosejs.com)**
-- **[Passport JWT Authentication](http://www.passportjs.org/)**
+- **[Passport JWT Authentication](http://www.passportjs.org/packages/passport-jwt/)**
 - **[nodemon for faster development](https://www.npmjs.com/package/nodemon)**
 - **[mongo sanitize](https://www.npmjs.com/package/mongo-sanitize)** - sanitize request data
 - **[CORS](https://www.npmjs.com/package/cors)** - Cross-Origin Resource-Sharing enabled
