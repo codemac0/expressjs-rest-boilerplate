@@ -4,7 +4,7 @@ A starter boilerplate for building APIs using Node.js, Express, and Mongoose.
 ## Installation
 To create a project, run:
 ```bash
-npx create-nodejs-express-app <project-name>
+npx create-expressjs-rest-app <project-name>
 ```
 Or
 Clone the repository
