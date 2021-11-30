@@ -24,3 +24,5 @@ cp .env.example .env
 - **[CORS](https://www.npmjs.com/package/cors)** - Cross-Origin Resource-Sharing enabled
 - **Error handling**
 - **Enviroment Variables (.env) for security (API keys etc...)**
+## License
+[MIT](LICENSE)
