@@ -1,4 +1,4 @@
-# Restfull API Boilerplate for Node.js 
+# REST API Boilerplate for Node.js 
 A starter boilerplate for building APIs using Node.js, Express, and Mongoose.
 
 ## Installation
