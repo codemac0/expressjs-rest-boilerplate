@@ -2,6 +2,11 @@
 A starter boilerplate for building APIs using Node.js, Express, and Mongoose.
 
 ## Installation
+To create a project, run:
+```bash
+npx create-nodejs-express-app <project-name>
+```
+Or
 Clone the repository
 ```bash
 git clone --depth 1 https://github.com/codemac0/expressjs-rest-boilerplate.git

@@ -1,13 +1,29 @@
 {
-  "name": "expressjs-rest-boilerplate",
+  "name": "create-expressjs-rest-app",
   "version": "1.2.0",
-  "description": "A starter boilerplate for building APIs using nodejs, express and mangoose",
+  "description": "Create a Node.js app for building APIs using nodejs, express and mangoose,  by running one command",
+  "bin": "bin/createApp.js",
   "main": "src/index.js",
+  "repository": "https://github.com/codemac0/expressjs-rest-boilerplate.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js"
   },
-  "author": "Mukesh Suthar",
+  "author": "Mukesh Suthar <medjfr02@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "node",
+    "node.js",
+    "boilerplate",
+    "express",
+    "api",
+    "mongodb",
+    "mongoose",
+    "passport",
+    "joi",
+    "mongosanitize",
+    "nodemon"
+  ],
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
