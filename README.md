@@ -4,8 +4,8 @@ A starter boilerplate for building APIs using Node.js, Express, and Mongoose.
 ## Installation
 Clone the repository
 ```bash
-git clone --depth 1 https://github.com/codemac0/node-express-boilerplate.git
-cd node-express-boilerplate
+git clone --depth 1 https://github.com/codemac0/expressjs-rest-boilerplate.git
+cd expressjs-rest-boilerplate
 ```
 Install the dependencies:
 ```bash
