@@ -1,13 +1,13 @@
 {
-  "name": "catalogue_sys",
-  "version": "1.0.0",
-  "description": "",
+  "name": "expressjs-rest-boilerplate",
+  "version": "1.2.0",
+  "description": "A starter boilerplate for building APIs using nodejs, express and mangoose",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mukesh Suthar",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
@@ -21,10 +21,12 @@
     "moment": "^2.29.1",
     "mongo-sanitize": "^1.1.0",
     "mongoose": "^6.0.13",
-    "nodemon": "^2.0.15",
     "passport": "^0.5.0",
     "passport-jwt": "^4.0.0",
     "uuid": "^8.3.2",
     "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
