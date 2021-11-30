@@ -20,8 +20,8 @@ cp .env.example .env
 ## Features
 - **[MongoDB](https://www.mongodb.com) - [Mongoose](https://mongoosejs.com)**
 - **[Passport JWT Authentication](http://www.passportjs.org/)**
+- **[nodemon for faster development](https://www.npmjs.com/package/nodemon)**
+- **[mongo sanitize](https://www.npmjs.com/package/mongo-sanitize)** - sanitize request data
+- **[CORS](https://www.npmjs.com/package/cors)** - Cross-Origin Resource-Sharing enabled
 - **Error handling**
-- **nodemon for faster development**
-- **mongo sanitize** - sanitize request data
 - **Enviroment Variables (.env) for security (API keys etc...)**
-- **CORS** - Cross-Origin Resource-Sharing enabled
