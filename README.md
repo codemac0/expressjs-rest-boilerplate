@@ -1,5 +1,5 @@
 # Restfull API Boilerplate for Node.js 
-A Starter boilerplate for building APIs using Node.js, Express, and Mongoose.
+A starter boilerplate for building APIs using Node.js, Express, and Mongoose.
 
 ## Installation
 Clone the repository
