@@ -68,8 +68,6 @@ async function setup() {
     await runCmd('npx rimraf ./.git');
 
     // Remove extra files
-    fs.unlinkSync(path.join(appPath, 'CHANGELOG.md'));
-    fs.unlinkSync(path.join(appPath, 'CONTRIBUTING.md'));
     fs.unlinkSync(path.join(appPath, 'bin', 'createApp.js'));
     fs.rmdirSync(path.join(appPath, 'bin'));
 
@@ -77,11 +75,10 @@ async function setup() {
     console.log();
 
     console.log('We suggest that you start by typing:');
-    console.log(`    cd ${folderName}`);
-    console.log('    npm run dev');
+    console.log(` cd ${folderName}`);
+    console.log(' npm run dev');
     console.log();
     console.log('Enjoy your Node.js app.!');
-    console.log('Check README.md for more info.');
   } catch (error) {
     console.log(error);
   }
