@@ -2,7 +2,7 @@
   "name": "create-expressjs-rest-app",
   "version": "1.0.2",
   "description": "Create a Node.js app for building APIs using nodejs, express and mangoose,  by running one command",
-  "bin": "bin/createApp.js",
+  "bin": "bin/cli.js",
   "main": "src/index.js",
   "repository": "https://github.com/codemac0/expressjs-rest-boilerplate.git",
   "scripts": {
