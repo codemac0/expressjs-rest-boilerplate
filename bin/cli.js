@@ -57,7 +57,7 @@ async function setup() {
     console.log('Environment files copied.');
 
     await exCmd('npx rimraf ./.git');
-    fs.unlinkSync(path.join(appPath, 'bin', 'createApp.js'));
+    fs.unlinkSync(path.join(appPath, 'bin', 'cli.js'));
     fs.rmdirSync(path.join(appPath, 'bin'));
 
     console.log('Installation is now complete!');
