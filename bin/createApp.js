@@ -1,10 +1,9 @@
 const util = require('util');
 const path = require('path');
 const fs = require('fs');
-const { execSync } = require('child_process');
 
 const exec = util.promisify(require('child_process').exec);
-async function exeCmd(command) {
+async function exCmd(command) {
   try {
     const { stdout, stderr } = await exec(command);
     console.log(stdout);
@@ -42,21 +41,21 @@ try {
 async function setup() {
   try {
     console.log(`Downloading files from repo ${repo}`);
-    await exeCmd(`git clone --depth 1 ${repo} ${folderName}`);
+    await exCmd(`git clone --depth 1 ${repo} ${folderName}`);
     console.log('Cloned successfully.');
     console.log('');
 
     process.chdir(appPath);
 
     console.log('Installing dependencies...');
-    await exeCmd('npm install');
+    await exCmd('npm install');
     console.log('Dependencies installed successfully.');
     console.log();
 
     fs.copyFileSync(path.join(appPath, '.env.example'), path.join(appPath, '.env'));
     console.log('Environment files copied.');
 
-    await exeCmd('npx rimraf ./.git');
+    await exCmd('npx rimraf ./.git');
     fs.unlinkSync(path.join(appPath, 'bin', 'createApp.js'));
     fs.rmdirSync(path.join(appPath, 'bin'));
 
